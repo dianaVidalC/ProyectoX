@@ -1,0 +1,82 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+#servicios{
+  width: 100%;
+  height: 40rem;
+  background: pink;
+  padding: 1rem;
+}
+
+.servicios{
+
+  background: lightgray;
+  width: 20%;
+  height: 25rem;
+  display:inline-block;
+  vertical-align: top;
+  margin-top:2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+article.servicios {
+    position: relative;
+}
+
+#servicios img{
+  width: 13rem;
+  margin-top: 10rem;
+}
+
+#servicios h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#icon-home{
+  position: absolute;
+  font-size: 5rem;
+  color:blue;
+  margin-left: auto;
+  margin-right: auto;
+  top: 2rem;
+  left: 6rem;
+}
+
+#icon-school{
+    position: absolute;
+    font-size: 5rem;
+    color:blue;
+    margin-left: auto;
+    margin-right: auto;
+    top: 9rem;
+    left: 24rem;
+}
+
+#icon-scissors{
+    position: absolute;
+    font-size: 5rem;
+    color:blue;
+    margin-left: auto;
+    margin-right: auto;
+    top: 9rem;
+    left: 55rem;
+}
+
+#icon-cool2{
+    position: absolute;
+    font-size: 5rem;
+    color:blue;
+    margin-left: auto;
+    margin-right: auto;
+    top: 3rem;
+    left: 6rem;
+}
+
+.parrafo{
+  position: absolute;
+  color:red;
+}
