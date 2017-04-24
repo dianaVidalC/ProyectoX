@@ -20,7 +20,20 @@
   margin-top:2rem;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  transition: all 1s ease;
 }
+
+.servicios span:hover{
+  padding-top: 1rem;
+
+  webkit-transform:scale(1.1);
+
+  -webkit-transition:all 0.5s ease-in-out;
+}
+
 article.servicios {
     position: relative;
 }
@@ -36,47 +49,41 @@ article.servicios {
   font-size: 3rem;
 }
 
-#icon-home{
+#icon-home,
+#icon-school,
+#icon-scissors,
+#icon-cool2{
   position: absolute;
   font-size: 5rem;
-  color:blue;
+  color:#10122E;
   margin-left: auto;
   margin-right: auto;
   top: 2rem;
   left: 6rem;
-}
-
-#icon-school{
-    position: absolute;
-    font-size: 5rem;
-    color:blue;
-    margin-left: auto;
-    margin-right: auto;
-    top: 9rem;
-    left: 24rem;
-}
-
-#icon-scissors{
-    position: absolute;
-    font-size: 5rem;
-    color:blue;
-    margin-left: auto;
-    margin-right: auto;
-    top: 9rem;
-    left: 55rem;
-}
-
-#icon-cool2{
-    position: absolute;
-    font-size: 5rem;
-    color:blue;
-    margin-left: auto;
-    margin-right: auto;
-    top: 3rem;
-    left: 6rem;
+  cursor: pointer;
 }
 
 .parrafo{
   position: absolute;
-  color:red;
+  color:#4BAE4F;
+
+}
+
+#hospedaje-guarderia{
+  top: 8rem;
+  left: 4rem;
+}
+
+#adiestramiento{
+  top: 8rem;
+  left: 5rem;
+}
+
+#grooming{
+  top: 8rem;
+  left: 6rem;
+}
+#moda-canina{
+  top: 8rem;
+  left: 6rem;
 }
