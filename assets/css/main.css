@@ -2,11 +2,10 @@
   margin:0;
   padding: 0;
 }
-
+/*
 #servicios{
   width: 100%;
   height: 40rem;
-  background: pink;
   padding: 1rem;
 }
 
@@ -17,22 +16,11 @@
   height: 25rem;
   display:inline-block;
   vertical-align: top;
-  margin-top:2rem;
+
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition:all 1s ease;
-  -moz-transition:all 1s ease;
-  -o-transition:all 1s ease;
-  transition: all 1s ease;
 }
 
-.servicios span:hover{
-  padding-top: 1rem;
-
-  webkit-transform:scale(1.1);
-
-  -webkit-transition:all 0.5s ease-in-out;
-}
 
 article.servicios {
     position: relative;
@@ -92,7 +80,7 @@ article.servicios {
 }
 
 #transicion-hospedaje{
-  display: none;
+  visibility: hidden;
   position: absolute;
   top:3rem;
   left: 1rem;
@@ -114,8 +102,8 @@ article.servicios {
   font-size: 1.5rem;
   }
 #transicion-grooming{
-  display: none;
-  position: absolute;
+  visibility: hidden;
+  position: absolute
   top:5rem;
   left: 1rem;
   font-family: "Playfair Display", serif;
@@ -125,7 +113,7 @@ article.servicios {
   font-size: 1.5rem;
 }
 #transicion-moda{
-  display: none;
+  visibility: hidden;
   position: absolute;
   top:5rem;
   left: 1rem;
@@ -135,9 +123,55 @@ article.servicios {
   color:#10122E;
   font-size: 1.5rem;
   }
-article i.fa{
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 2rem;
+}
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-img .hidden {
+  overflow: hidden;
+}
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:8rem;
+  width: 100%;
+  height: 300px;
+  transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img .text {
+  font-family: 'Open Sans';
   position: absolute;
-  left:7rem;
-  top:17rem;
-  font-size: 4rem;
+  z-index: -1;
+  display: block;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.div-img:hover .img {
+  transform: translate(0px, -150px);
+  -ms-transform: translate(0px, -150px);
+  -moz-transform: translate(0px, -150px);
+  -webkit-transform: translate(0px, -150px);
+  -o-transform: translate(0px, -150px);
 }
