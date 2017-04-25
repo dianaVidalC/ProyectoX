@@ -66,6 +66,9 @@ article.servicios {
 .parrafo{
   position: absolute;
   color:#4BAE4F;
+  font-family:"Playfair Display", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
 
 }
 
@@ -76,14 +79,65 @@ article.servicios {
 
 #adiestramiento{
   top: 8rem;
-  left: 5rem;
+  left: 4rem;
 }
 
 #grooming{
   top: 8rem;
-  left: 6rem;
+  left: 5rem;
 }
 #moda-canina{
   top: 8rem;
-  left: 6rem;
+  left: 4.5rem;
+}
+
+#transicion-hospedaje{
+  display: none;
+  position: absolute;
+  top:3rem;
+  left: 1rem;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  color:#10122E;
+  font-size: 1.5rem;
+  }
+#transicion-adiestramiento{
+  display: none;
+  position: absolute;
+  top:2rem;
+  left: 0.9rem;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  color:#10122E;
+  font-size: 1.5rem;
+  }
+#transicion-grooming{
+  display: none;
+  position: absolute;
+  top:5rem;
+  left: 1rem;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  color:#10122E;
+  font-size: 1.5rem;
+}
+#transicion-moda{
+  display: none;
+  position: absolute;
+  top:5rem;
+  left: 1rem;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+  color:#10122E;
+  font-size: 1.5rem;
+  }
+article i.fa{
+  position: absolute;
+  left:7rem;
+  top:17rem;
+  font-size: 4rem;
 }
