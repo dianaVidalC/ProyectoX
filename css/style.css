@@ -37,8 +37,16 @@
 .icon-heart:before {
   content: "\e9da";
 }
-.icon-play2:before {
+.play:before {
   content: "\ea15";
+  font-family: 'icono';
+  color: blue;
+  font-size: 4rem;
+  position: absolute;
+  top: 100%;
+    /* bottom: -62px; */
+  left: 36%;
+  cursor: pointer;
 }
 .icon-mail4:before {
   content: "\ea86";

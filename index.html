@@ -4,19 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="shortcut icon" href="image/favicon.png" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Can-pamento</title>
 </head>
 <body>
-<div class="portada">
-  <header id="head">
-    <a href="index.html"><img id="logo" src="image/logo.png" alt="casa de perro"></a><h1 id="title">Can-pamento</h1>
+<header id="head">
+  <nav class="portada">
+      <a href="index.html"><img id="logo" src="image/logo.png" alt="casa de perro"></a><h1 id="title">Can-pamento</h1>
     <div class="toogle">
       <div class="menu-toogle"></div>
     </div>
-    <div id="cubre"><span class="arrow"></span><p id="slogan">"Lo que tu <span class="color">engreido perruno</span> quiere...Nosotros lo tenemos!!!"</p></div>
+    <div id="myModal" class="modal">
+      <a href="#" id="close">&times;</a>
+      <video class="modal-content" id="video01" controls>
+        <source src="video/fala.mp4">
+      </video>
+    </div>
     <nav class="main-nav" role="navigation">
       <ul class="menu-nav">
         <li id="firstMenu"><a href="index.html" ><span class="spanM">Inicio</span></a></li>
@@ -27,11 +33,28 @@
         <li class="liSpan"><a href="#contacto" ><span class="spanM">Contáctanos</span></a></li>
       </ul>
     </nav>
-  </header>
-</div>
+  </nav>
+</header>
+<span id="play" class="play">"Solo en casa..."</span>
+<div id="cubre"><span id="flecha" class="arrow"></span><p id="slogan">"Lo que tu <span class="color">engreido perruno</span> quiere...Nosotros lo tenemos!!!"</p></div>
+<section id="servicios">
+  <div class="azul"></div>
+<section id="galeria">
+  <div class="container">
+    <div class="div-img" >
+      <img class="img" src="http://www.interactius.com/wp-content/uploads/2015/03/foto10.png" title="Foto10" alt="Foto10">
+      <div class="text">That's all folks!</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="div-img" >
+      <img class="img" src="http://www.interactius.com/wp-content/uploads/2015/03/foto10.png" title="Foto10" alt="Foto10">
+      <div class="text">That's all folks!</div>
+    </div>
+  </div>
 
-
-
+  </section>
+</section>
 <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
