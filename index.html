@@ -26,6 +26,7 @@
     <nav class="main-nav" role="navigation">
       <ul class="menu-nav">
         <li id="firstMenu"><a href="index.html" ><span class="spanM">Inicio</span></a></li>
+        <li class="liSpan"><a href="#quienes" ><span class="spanM">Quienes somos</span></a></li>
         <li class="liSpan"><a href="#servicios" ><span class="spanM">Servicios</span></a></li>
         <li class="liSpan"><a href="#galeria" ><span class="spanM">Galeria de fotos</span></a></li>
         <li class="liSpan"><a href="#equipo" ><span class="spanM">Equipo</span></a></li>
@@ -37,11 +38,24 @@
 </header>
 <span id="play" class="play">"Solo en casa..."</span>
 <div id="cubre"><span id="flecha" class="arrow"></span><p id="slogan">"Lo que tu <span class="color">engreido perruno</span> quiere...Nosotros lo tenemos!!!"</p></div>
-<section id="servicios">
+<section id="quienes">
   <div class="azul"></div>
+</section>
 <section id="galeria">
   <h2>Galería de fotos</h2>
 </section>
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <hr>
+  <h3>Llene el formulario y nos pondremos en contacto a la brevedad posible</h3>
+  <form class="form" action="index.html" method="post">
+    <input type="text" class="contac" name="nombre" placeholder="Escriba su nombre"><br>
+    <input type="email" class="contac" name="correo" placeholder="Escriba su correo"><br>
+    <input type="text" class="contac" name="asunto" placeholder="Asunto"><br>
+    <textarea class="contac" name="mensaje" rows="8" cols="80"></textarea><br>
+    <input class="contac" type="submit" name="enviar" value="Enviar">
+  </form>
+
 </section>
 <script src="js/app.js" charset="utf-8"></script>
 </body>

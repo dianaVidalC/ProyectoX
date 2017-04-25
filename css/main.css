@@ -302,7 +302,7 @@ a span.spanM:hover {
   color:#A1FE2C;
 }
 
-#servicios{
+#quienes{
   background-color: white;
   color:blue;
   position: relative;
@@ -392,5 +392,11 @@ h2{
             .transform(0px,0px,2);
             transform: translate(0,0) scale(2);
           }
-     }
+.contac{
+  margin:10px 0;;
+}
+
+#contacto{
+  text-align: center;
+  margin:10px auto;
 }
