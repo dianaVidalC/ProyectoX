@@ -20,7 +20,7 @@
   top: 13rem;
 }
 .div-img {
-
+  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,16 +54,24 @@
   color:#329d17;
 }
 .div-img:hover .img {
-  transform: translate(0px, -150px);
-  -ms-transform: translate(0px, -150px);
-  -moz-transform: translate(0px, -150px);
-  -webkit-transform: translate(0px, -150px);
-  -o-transform: translate(0px, -150px);
+  transform: translate(0px, -170px);
+  -ms-transform: translate(0px, -170px);
+  -moz-transform: translate(0px, -170px);
+  -webkit-transform: translate(0px, -170px);
+  -o-transform: translate(0px, -170px);
+}
+
+.div-img h3{
+  text-align: center;
+  top: 3rem;
+  color:rgba(11, 51, 8, 0.76);
+  font-family: "open sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 #titulo-servicios{
   position: absolute;
-  top:6rem;
+  top:4rem;
   left: 40%;
   font-weight: bold;
   font-size: 4rem;
