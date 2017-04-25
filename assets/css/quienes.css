@@ -19,11 +19,21 @@
   height: 17rem;
   left: 5rem;
   top: 4rem;
-  background-color: #10122E;
+  background-color: rgb(16, 18, 46);
   color:#FFF;
   border-radius: 1rem;
 }
 
 .colita{
-  
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  bottom: 6rem;
+  left: 8rem;
+  background: rgb(16, 18, 46); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(16, 18, 46,1) 0%,rgba(16, 18, 46,1) 0%,rgba(16, 18, 46,1) 45%,rgba(16, 18, 46,1) 45%,rgba(16, 18, 46,0) 51%,rgba(16, 18, 46,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(16, 18, 46,1) 0%,rgba(16, 18, 46,1) 0%,rgba(16, 18, 46,1) 45%,rgba(16, 18, 46,1) 45%,rgba(16, 18, 46,0) 51%,rgba(16, 18, 46,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(16, 18, 46,1) 0%,rgba(16, 18, 46,1) 0%,rgba(16, 18, 46,1) 45%,rgba(16, 18, 46,1) 45%,rgba(16, 18, 46,0) 51%,rgba(16, 18, 46,0) 100%);; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10122E', endColorstr='#cedce7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
