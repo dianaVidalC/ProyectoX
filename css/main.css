@@ -406,11 +406,11 @@ h2{
 }
 .input-box span{
   display: block;
-  background-color: rgba(51,51,51,0.8);
+  background-color: #A1FE2C;
   padding: 5px;
   position: absolute;
-  left: 105%;
-  top: 8px;
+  top: 4px;
+  right: 165px;
   width: 200px;
   color: white;
 }
@@ -420,7 +420,7 @@ h2{
   width: 0;
   height: 0;
   border-top: 5px solid transparent;
-  border-right: 10px solid rgba(51,51,51,0.8);
+  border-right: 10px solid #A1FE2C;
   border-bottom: 5px solid transparent;
   position: absolute;
   right: 100%;

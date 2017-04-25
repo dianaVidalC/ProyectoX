@@ -49,11 +49,11 @@
   <hr>
   <h3>Llene el formulario y nos pondremos en contacto a la brevedad posible</h3>
   <form class="form" action="index.html" method="post">
-    <div class="input-box"><input type="text" class="contac" id="name" name="nombre" placeholder="Escriba su nombre"><span id="js_name"  name="spanValid">Debe ingresar su nombre</span></div>
+    <div class="input-box"><input type="text" class="contac" id="name" name="nombre" placeholder="Escriba su nombre"><span id="js_name"  style="display:none" name="spanValid">Debe ingresar su nombre</span></div>
     <div class="input-box"><input type="email" class="contac" id="mail" name="correo" placeholder="Escriba su correo"><span id="js_mail" style="display:none" name="spanValid">Debe ingresar su correo</span></div>
-    <div class="input-box"><input type="text" class="contac" id="asunto" name="asunto" placeholder="Asunto"><span id="js_asunto" style="display:none" name="spanValid">Debe ingresar un asunto</span></div>
-    <div class="input-box"><textarea class="contac" id="msj" name="mensaje" rows="8" cols="80"></textarea></div>
-    <input class="contac" type="submit" name="enviar" value="Enviar" id="envia">
+    <div class="input-box"><input type="text" class="contac" id="asunto" name="asunto" placeholder="Asunto"></div>
+    <div class="input-box"><textarea class="contac" id="msj" name="mensaje" rows="8" cols="80"></textarea><span id="js_asunto" style="display:none" name="spanValid">Debe ingresar un mensaje</span></div>
+    <button type="button" name="button" id="envia">Envia</button>
   </form>
 
 </section>
