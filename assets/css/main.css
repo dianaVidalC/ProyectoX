@@ -2,140 +2,25 @@
   margin:0;
   padding: 0;
 }
-/*
-#servicios{
-  width: 100%;
-  height: 40rem;
-  padding: 1rem;
-}
 
 .servicios{
-
-  background: lightgray;
-  width: 20%;
-  height: 25rem;
-  display:inline-block;
-  vertical-align: top;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-article.servicios {
-    position: relative;
-}
-
-#servicios img{
-  width: 13rem;
-  margin-top: 10rem;
-}
-
-#servicios h2{
-  text-align: center;
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-#icon-home,
-#icon-school,
-#icon-scissors,
-#icon-cool2{
-  position: absolute;
-  font-size: 5rem;
-  color:#10122E;
-  margin-left: auto;
-  margin-right: auto;
-  top: 2rem;
-  left: 6rem;
-  cursor: pointer;
-}
-
-.parrafo{
-  position: absolute;
-  color:#4BAE4F;
-  font-family:"Playfair Display", serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-
-}
-
-#hospedaje-guarderia{
-  top: 8rem;
-  left: 4rem;
-}
-
-#adiestramiento{
-  top: 8rem;
-  left: 4rem;
-}
-
-#grooming{
-  top: 8rem;
-  left: 5rem;
-}
-#moda-canina{
-  top: 8rem;
-  left: 4.5rem;
-}
-
-#transicion-hospedaje{
-  visibility: hidden;
-  position: absolute;
-  top:3rem;
-  left: 1rem;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: bold;
-  color:#10122E;
-  font-size: 1.5rem;
-  }
-#transicion-adiestramiento{
-  display: none;
-  position: absolute;
-  top:2rem;
-  left: 0.9rem;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: bold;
-  color:#10122E;
-  font-size: 1.5rem;
-  }
-#transicion-grooming{
-  visibility: hidden;
-  position: absolute
-  top:5rem;
-  left: 1rem;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: bold;
-  color:#10122E;
-  font-size: 1.5rem;
-}
-#transicion-moda{
-  visibility: hidden;
-  position: absolute;
-  top:5rem;
-  left: 1rem;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: bold;
-  color:#10122E;
-  font-size: 1.5rem;
-  }
-*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-.container {
-  width: 300px;
-  height: 300px;
   position: relative;
+  width: 100%;
+  height: 40rem;
+}
+
+.container {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+  display: inline-block;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 2rem;
+  top: 13rem;
 }
 .div-img {
-  display: block;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -143,7 +28,6 @@ article.servicios {
   overflow: hidden;
 }
 .div-img .img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top:8rem;
@@ -160,13 +44,14 @@ article.servicios {
   -o-transition: all 500ms ease-in-out;
 }
 .div-img .text {
-  font-family: 'Open Sans';
+
+  font-family: "Raleway", sans-serif;
   position: absolute;
   z-index: -1;
-  display: block;
-  bottom: 20px;
+  bottom: 4rem;
   width: 100%;
   text-align: center;
+  color:#329d17;
 }
 .div-img:hover .img {
   transform: translate(0px, -150px);
@@ -174,4 +59,14 @@ article.servicios {
   -moz-transform: translate(0px, -150px);
   -webkit-transform: translate(0px, -150px);
   -o-transform: translate(0px, -150px);
+}
+
+#titulo-servicios{
+  position: absolute;
+  top:6rem;
+  left: 40%;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "open sans", sans-serif;
+  color: #10122E;
 }
