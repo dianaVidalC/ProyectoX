@@ -70,9 +70,9 @@ function cerrar (event){
 
 function scrollWin() {
     window.scrollTo(0, 654);
+    window.scrollAmount="5"
 }
 
-flecha.addEventListener('click',scrollWin);
 
 function moveScroll(event){
   var scroll=window.pageYOffset || document.body.scrollTop;
@@ -90,8 +90,35 @@ function moveScroll(event){
 
 }
 
+function galeria(event){
+  var fotos=["jugando en el hospedaje-Pachacamac","Lo entrenamos con cariño","Los cachorros están en su área de juegos","Primer día de Totty en la guarderia canina","Sake juega feliz con nosotros","Gozan de más salud","Están siempre bajo supervisión","Ellos aman estar aquí"];
+  var tamano=fotos.length;
+  console.log(tamano);
+  var section=document.getElementById('galeria');
+  var fragment=document.createDocumentFragment();
+  for(var i=0;i<tamano;i++){
+    var div1=document.createElement('div');
+    div1.setAttribute('class','container');
+    var div2=document.createElement('div');
+    div2.setAttribute('class','div-img');
+    var img=document.createElement('img');
+    img.setAttribute('class','img');
+    img.src="image/" +fotos[i] + ".jpg";
+    img.alt=fotos[i];
+    var text=document.createElement('div');
+    text.setAttribute('class','text');
+    text.innerHTML=fotos[i];
 
+    div1.appendChild(div2);
+    div2.appendChild(img);
+    div2.appendChild(text);
+    fragment.appendChild(div1);
+  }
+    section.appendChild(fragment);
+}
 
+window.addEventListener('load',galeria);
+flecha.addEventListener('click',scrollWin);
 cierra.addEventListener('click',cerrar);
 menu[0].addEventListener('click', cambiar);
 // flecha.addEventListener('click',more);
