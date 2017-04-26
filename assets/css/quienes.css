@@ -39,6 +39,15 @@
   line-height: 2rem;
   font-family: "Raleway", sans-serif;
 }
+
+.quienes-somos span{
+  position: absolute;
+  color: #329d17;
+  font-size: 6rem;
+  top: 24rem;
+  left: 4rem;
+
+}
 .colita{
   position: absolute;
   width: 6rem;
@@ -62,22 +71,76 @@
 
 .mision-vision{
   position: relative;
-  top: 6rem;
-  width: 100%;
+  top: 11rem;
+  width: 80%;
   height: 30rem;
-
+  padding-left: 5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mision-vision .mision h2{
-  display: inline-block;
+.mision-vision .somos h2{
   margin-left: 2rem;
-  margi-top: 2rem;
   font-size: 3rem;
   color:#329d17;
+  font-family: "open sans", sans-serif;
 }
 
-.mision p{
+.somos{
+  position: relative;
+  width: 80%;
+  height: 14rem;
+  padding: 1rem;
+}
+.somos p{
+  display: inline-block;
+  width:28rem;
   margin-left:2rem;
-  color: rgb(16, 18, 46);
+  margin-top: 3rem;
+  color: rgba(19, 27, 140, 0.87);
   font-family: "Raleway", sans-serif;
+}
+
+.somos span{
+  position: absolute;
+  font-size: 12rem;
+  color: #5BB7E7;
+  margin-left: 10rem;
+  top: 1rem;
+}
+
+footer{
+  position: relative;
+  top: 20rem;
+  height: 6rem;
+  width: 100%;
+  background: rgba(19, 27, 140, 0.87);
+}
+
+.central{
+  width: 20rem;
+  margin-left: 25rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.central img{
+  width:4rem;
+}
+
+.central p{
+  position: absolute;
+  padding: 2rem;
+  display: inline-block;
+  color:  #5BB7E7;
+}
+
+.redes{
+  position: absolute;
+  padding: 1rem;
+  color:#5BB7E7;
+  font-size: 1.5rem;
+  top: 1.5rem;
+  bottom: 2rem;
+  right: 2rem;
 }

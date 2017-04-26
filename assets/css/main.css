@@ -6,12 +6,12 @@
 .servicios{
   position: relative;
   width: 100%;
-  height: 40rem;
+  height: 50rem;
 }
 
 .container {
   position: relative;
-  width: 20rem;
+  width: 18rem;
   height: 30rem;
   display: inline-block;
   left: 0;
@@ -76,5 +76,42 @@
   font-weight: bold;
   font-size: 4rem;
   font-family: "open sans", sans-serif;
-  color: #10122E;
+  color: rgba(19, 27, 140, 0.87);
+}
+
+
+footer{
+  position: relative;
+  top: 20rem;
+  height: 6rem;
+  width: 100%;
+  background: rgba(19, 27, 140, 0.87);
+}
+
+.central{
+  width: 20rem;
+  margin-left: 25rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.central img{
+  width:4rem;
+}
+
+.central p{
+  position: absolute;
+  padding: 2rem;
+  display: inline-block;
+  color:  #5BB7E7;
+}
+
+.redes{
+  position: absolute;
+  padding: 1rem;
+  color:#5BB7E7;
+  font-size: 1.5rem;
+  top: 1.5rem;
+  bottom: 2rem;
+  right: 2rem;
 }
