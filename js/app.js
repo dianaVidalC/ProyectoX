@@ -123,11 +123,6 @@ function galeria(event){
     section.appendChild(fragment);
 }
 
-var body=document.getElementsByTagName('body')[0];
-body.onbeforeunload = function(e) {
-  return "Gracias por visitar nuestra página";
-};
-
 window.addEventListener('load',galeria);
 flecha.addEventListener('click',scrollWin);
 cierra.addEventListener('click',cerrar);
