@@ -43,6 +43,7 @@ function ocultar(){
 
 var anchor=document.getElementsByClassName('spanM');
 var tamano=anchor.length;
+
 for(var i=0;i<tamano;i++){
   anchor[i].addEventListener('click',ocultar);
 }
@@ -69,8 +70,8 @@ function cerrar (event){
 }
 
 function scrollWin() {
-    window.scrollTo(0, 654);
-    window.scrollAmount="5"
+  window.scrollTo(0, 654);
+  window.scrollAmount="5"
 }
 
 

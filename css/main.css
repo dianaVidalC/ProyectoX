@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body{
   margin:0;
   padding: 0;
@@ -75,7 +77,6 @@ nav{
 }
 
 .portada{
-  /*height: -10rem;*/
   padding: 7px;
 }
 
@@ -86,44 +87,44 @@ nav.up{
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 90px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: #5BB7E7; /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 90px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: #5BB7E7; /* Black w/ opacity */
 }
 
 /* Contenido del modal */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    border:12px solid white;
-    z-index: 1;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border:12px solid white;
+  z-index: 1;
 }
 
 
 /* Add Animation */
 .modal-content {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {transform:scale(0)}
+  to {transform:scale(1)}
 }
 
 /* boton cerrar el modal */
@@ -139,115 +140,106 @@ nav.up{
 }
 
 #close:hover {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* 100% imagen en la pantalla */
 @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
+  .modal-content {
+      width: 100%;
     }
 }
 
 .toogle {
-    position: absolute;
-    top:0;
-    right: 0px;
-    height: 20px;
-    width: 40px;
-    margin: 2rem 2rem;
-    z-index: 2000;
+  position: absolute;
+  top:0;
+  right: 0px;
+  height: 20px;
+  width: 40px;
+  margin: 2rem 2rem;
+  z-index: 2000;
 }
 
 .toogle:hover {
-    cursor:pointer;
+  cursor:pointer;
 }
 
 .menu-toogle, .menu-toogle:after, .menu-toogle:before {
-        background-color:#A1FE2C;
-        position: absolute;
-        width: 40px;
-        height: 4px;
-        border-radius: 5px;
-        content: '';
-        transition-timing-function: ease;
-        transition-duration: .2s;
-        transition-property: transform,opacity;
+  background-color:#A1FE2C;
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  content: '';
+  transition-timing-function: ease;
+  transition-duration: .2s;
+  transition-property: transform,opacity;
 }
 .menu-toogle:before {
-        top: 10px;
+  top: 10px;
 }
 
 .menu-toogle:after {
-        top: 20px;
+  top: 20px;
 }
 
 .toogle:hover .menu-toogle:before{
-      top: -15px;
+  top: -15px;
 }
 
 .toogle:hover .menu-toogle:after{
-      top: 15px;
+  top: 15px;
 }
 
 .toogle.open .menu-toogle {
-      background-color: #A1FE2C;
-      z-index: 1000;
-      /*transform: translate3d(0,10px,0) rotate(45deg);*/
+  background-color: #A1FE2C;
+  z-index: 1000;
 }
 
 .toogle.open .menu-toogle:after {
-      /*top:10px;
-      z-index: 1000;
-      background-color: transparent;
-      transform: translate3d(0,-23px,0) rotate(-90deg);*/
-      top: -4px;
-      left: 13px;
-      width: 75%;
-      z-index: 1000;
-      background-color: #A1FE2C;
-      transform: translate3d(0,15px,0) rotate(-45deg);
+  top: -4px;
+  left: 13px;
+  width: 75%;
+  z-index: 1000;
+  background-color: #A1FE2C;
+  transform: translate3d(0,15px,0) rotate(-45deg);
 }
 
 .toogle.open .menu-toogle:before {
-      /*top:10px;
-      z-index:1000;
-      background-color: white;
-      transform: translate3d(0,-10px,0) rotate(90deg);*/
-      top: -1px;
-      width: 75%;
-      left: 14px;
-      z-index: 1000;
-      background-color: #A1FE2C;
-      transform: translate3d(0,-10px,0) rotate(45deg);
+  top: -1px;
+  width: 75%;
+  left: 14px;
+  z-index: 1000;
+  background-color: #A1FE2C;
+  transform: translate3d(0,-10px,0) rotate(45deg);
   }
 
 ul.menu-nav {
-    display:none;
-    background-color:#B5BFD7;
-    opacity: 1;
-    padding: 10px 0px;
-    margin:0px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    transition: background-color 0.6s cubic-bezier(0.7,0.01, 0.3, 1);
-    transform: perspective(600px) rotateX(0deg);
+  display:none;
+  background-color:#B5BFD7;
+  opacity: 1;
+  padding: 10px 0px;
+  margin:0px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.6s cubic-bezier(0.7,0.01, 0.3, 1);
+  transform: perspective(600px) rotateX(0deg);
 }
 
 .menu-nav li{
-    list-style: none;
-    padding:0;
-    margin:0;
-    width: 100%;
-    height: 100%;
-    letter-spacing: 0.1em;
-    font-size: 2.5rem;
-    text-align: center;
-    vertical-align: middle;
-  }
+  list-style: none;
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
 
 a{
   text-decoration: none;
@@ -272,17 +264,15 @@ li.liSpan {
 }
 
 a span.spanM {
-    left:0;
-    display:block;
-    padding-top:1rem;
-    font-family: 'Josefin Slab', serif;
-    margin:0;
-    /*margin-left: 0;
-    margin-right: 0;*/
-    color:#10122E;
-    width:100%;
-    height: 100%;
-    text-align: center;
+  left:0;
+  display:block;
+  padding-top:1rem;
+  font-family: 'Josefin Slab', serif;
+  margin:0;
+  color:#10122E;
+  width:100%;
+  height: 100%;
+  text-align: center;
 }
 
 a span.spanM:hover {
@@ -290,10 +280,6 @@ a span.spanM:hover {
   background-color: white;
 }
 
-/*#head{
-  position:relative;
-  height: 33.7rem;
-}*/
 
 #cubre{
   background-color: #3263A9;
@@ -318,18 +304,6 @@ a span.spanM:hover {
   color:#A1FE2C;
 }
 
-/*#quienes{
-  background-color: white;
-  color:blue;
-  position: relative;
-  top:4rem;
-  transition: 1s ease;
-}
-
-.azul{
-  height: 40rem;
-  background-color: blue;
-}*/
 
 .servicios{
   position: relative;
@@ -373,8 +347,8 @@ a span.spanM:hover {
   -ms-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
 }
-.div-img .text {
 
+.div-img .text {
   font-family: "Raleway", sans-serif;
   position: absolute;
   z-index: -1;
@@ -383,6 +357,7 @@ a span.spanM:hover {
   text-align: center;
   color:#329d17;
 }
+
 .div-img:hover .img {
   transform: translate(0px, -170px);
   -ms-transform: translate(0px, -170px);
@@ -404,9 +379,8 @@ a span.spanM:hover {
   top:7rem;
   left: 46%;
   font-weight: bold;
-  /*font-size: 4rem;*/
-  color: #10122E;
-  /*text-align: center;*/
+  font-size: 2rem;
+  color: rgba(19, 27, 140, 0.87);
 }
 
 
@@ -421,25 +395,8 @@ a span.spanM:hover {
   position: relative;
   left: 0;
   top: 6rem;
-}
-
-@import "lesshat";
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-.transition{
-  -webkit-transition: all 500ms ease-in-out; // IE 9
-  -moz-transition: all 500ms ease-in-out; // Firefox
-  -ms-transition: all 500ms ease-in-out; // Safari and Chrome
-  -o-transition: all 500ms ease-in-out; // Opera
-}
-
-.transform(@x,@y,@s){
-  transform: translate(@x,@y) scale(@s);
-  -webkit-transform: translate(@x,@y) scale(@s);
-  -moz-transform: translate(@x,@y) scale(@s);
-  -o-transform: translate(@x,@y) scale(@s);
-  -ms-transform: translate(@x,@y) scale(@s);
+  font-size: 2rem;
+  color:rgba(19, 27, 140, 0.87);
 }
 
 .containerG{
@@ -454,47 +411,50 @@ a span.spanM:hover {
 }
 
 .div-imgG{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
 
 .imgG{
-        display:block;
-        position: relative;
-        top:60px;
-        z-index: 2;
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-        height: 250px;
-        transform: translate(0,0) scale(1);
-        .transform(0px,0px,1);
-      -webkit-transition: all 500ms ease-in-out;
-    }
+  display:block;
+  position: relative;
+  top:60px;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 250px;
+  transform: translate(0,0) scale(1);
+  .transform(0px,0px,1);
+  -webkit-transition: all 500ms ease-in-out;
+}
 
 .textG{
-        font-family: 'Open Sans';
-        color:#10122E;
-        font-size: 1.1rem;
-        position:relative;
-        z-index: 1;
-        display:block;
-        bottom:20px;
-        width:100%;
-        text-align:center;
-        .transform(0px,0px,1);
-        transform: translate(0,0) scale(1);
-        -webkit-transition: all 500ms ease-in-out;
-    }
+  font-family: 'Open Sans';
+  color:#10122E;
+  font-size: 1.1rem;
+  position:relative;
+  z-index: 1;
+  display:block;
+  bottom:20px;
+  width:100%;
+  text-align:center;
+  .transform(0px,0px,1);
+  transform: translate(0,0) scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  }
+
 .imgG:hover{
-            .transform(0px,-30px,0.5);
-            transform: translate(0,-30px) scale(0.5);
-            border-radius: 50%;
-        }
+  .transform(0px,-30px,0.5);
+  transform: translate(0,-30px) scale(0.5);
+  border-radius: 50%;
+}
+
 .textG:hover{
-            .transform(0px,0px,2);
-            transform: translate(0,0) scale(2);
-          }
+  .transform(0px,0px,2);
+  transform: translate(0,0) scale(2);
+}
+
 .contac{
   margin:10px 0;;
 }
@@ -507,6 +467,7 @@ a span.spanM:hover {
 .input-box {
   position: relative;
 }
+
 .input-box span{
   display: block;
   background-color: #A1FE2C;
