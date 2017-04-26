@@ -47,7 +47,7 @@ Para hacer el cambio de forma del toogle y que se muestre/oculte el contenido he
 ### Función para el evento onkeypress y onpaste.
  Se han creado funciones que se ejecutan dependiendo del evento. En el onkeypress se ejecuta una función que no permite el ingreso de números. En el onpaste no te permite pegar contenido
 
-![funcionalidades del scroll](image/letrasNoPegarNum.jpg)
+![Eventos en la validación](image/letrasNopegarNum.jpg)
 
 
 
