@@ -28,7 +28,7 @@
   content: "\e900";
   font-family: 'icono';
   position:absolute;
-  bottom:-4rem;
+  bottom:-5rem;
   left:50%;
   font-size: 4rem;
   color:#525842;
@@ -51,12 +51,21 @@
 .icon-mail4:before {
   content: "\ea86";
 }
-.icon-facebook2:before {
+.facebook:before {
   content: "\ea91";
+  font-family: 'icono';
+  color:blue;
+  font-size: 2rem;
 }
-.icon-whatsapp:before {
+.whatsapp:before {
   content: "\ea93";
+  font-family: 'icono';
+  color:#A1FE2C;
+  font-size: 2rem;
 }
-.icon-twitter:before {
+.twitter:before {
   content: "\ea96";
+  font-family: 'icono';
+  color:#5BB7E7;
+  font-size: 2rem;
 }

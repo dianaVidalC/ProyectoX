@@ -13,11 +13,11 @@ var v = document.getElementsByTagName("video")[0];
 var servicios=document.getElementById('servicios');
 var panel=document.getElementsByClassName('portada');
 console.log(panel[0]);
+var redes=document.getElementById('redes');
 var finalScroll=0;
 
 function cambiar(event){
   if(menu[0].className=="toogle open"){
-    menu[0].classList.remove("open");
     ocultar();
   }
   else{
@@ -38,15 +38,15 @@ function ocultar(){
   nav[0].style.height="80px";
   html[0].style.overflow="auto";
   play.style.visibility="visible";
+  menu[0].classList.remove("open");
 }
 
-function more(event){
-  // if(servicios.style.height=="100px"){
-  //   servicios.style.height="0";
-  // }else{
-  //   servicios.style.height="100px";
-  // }
+var anchor=document.getElementsByClassName('spanM');
+var tamano=anchor.length;
+for(var i=0;i<tamano;i++){
+  anchor[i].addEventListener('click',ocultar);
 }
+
 
 play.addEventListener('mouseover',function (e){
   e.preventDefault();
@@ -78,16 +78,21 @@ function moveScroll(event){
   var scroll=window.pageYOffset || document.body.scrollTop;
   if(scroll>finalScroll){
     panel[0].style.display="none";
+    redes.style.display="none";
     console.log(scroll);
   }
-  if(scroll>=653){
+  if(scroll>=610){
     panel[0].style.display="block";
-    panel[0].classList.add("up");}
+    panel[0].classList.add("up");
+    redes.style.display="block";
+  }
   if(scroll<=3){
     panel[0].style.display="block";
     panel[0].setAttribute("class","portada");
   }
-
+  if(scroll>1950){
+    redes.style.display="none";
+  }
 }
 
 function galeria(event){
@@ -98,15 +103,15 @@ function galeria(event){
   var fragment=document.createDocumentFragment();
   for(var i=0;i<tamano;i++){
     var div1=document.createElement('div');
-    div1.setAttribute('class','container');
+    div1.setAttribute('class','containerG');
     var div2=document.createElement('div');
-    div2.setAttribute('class','div-img');
+    div2.setAttribute('class','div-imgG');
     var img=document.createElement('img');
-    img.setAttribute('class','img');
+    img.setAttribute('class','imgG');
     img.src="image/" +fotos[i] + ".jpg";
     img.alt=fotos[i];
     var text=document.createElement('div');
-    text.setAttribute('class','text');
+    text.setAttribute('class','textG');
     text.innerHTML=fotos[i];
 
     div1.appendChild(div2);
@@ -117,9 +122,13 @@ function galeria(event){
     section.appendChild(fragment);
 }
 
+var body=document.getElementsByTagName('body')[0];
+body.onbeforeunload = function(e) {
+  return "Gracias por visitar nuestra página";
+};
+
 window.addEventListener('load',galeria);
 flecha.addEventListener('click',scrollWin);
 cierra.addEventListener('click',cerrar);
 menu[0].addEventListener('click', cambiar);
-// flecha.addEventListener('click',more);
 window.addEventListener('scroll',moveScroll);

@@ -26,6 +26,12 @@
 
 .icon-repo-force-push:before {
   content: "\e902";
+  position: absolute;
+  font-size: 8rem;
+  color: #5BB7E7;
+  margin-left: 10rem;
+  top: 0;
+  left:50rem
 }
 .icon-bubble2:before {
   content: "\e96e";
@@ -35,6 +41,12 @@
 }
 .icon-eye:before {
   content: "\e9ce";
+  position: relative;
+  font-size: 8rem;
+  color: #5BB7E7;
+  margin-left: 10rem;
+  top: -59px;
+  left:49rem
 }
 .icon-social-twitter:before {
   content: "\e903";
@@ -60,4 +72,3 @@
 .icon-facebook-with-circle:before {
   content: "\e904";
 }
-

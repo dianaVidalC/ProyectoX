@@ -22,7 +22,7 @@ body{
 #play{
   position:absolute;
   top:50%;
-  left:44.6%;
+  left:43.8%;
   font-size: 2rem;
   color:blue;
   z-index:1;
@@ -44,13 +44,29 @@ body{
   height: 33.7rem;;
 }
 
+#redes{
+  position:fixed;
+  right: 0;
+  top:280px;
+  width: 3rem;
+  height: 10rem;
+  z-index: 5;
+  display:none;
+}
+
+#redes>span{
+  display: block;
+  margin:7px;
+  cursor:pointer;
+}
+
 nav{
   top:0;
   left:0;
   width:100%;
   color:#fff;
   height: 80px;
-  z-index:4;
+  z-index:6;
   margin-top: 0;
   position: fixed;
   padding-top: 0;
@@ -302,7 +318,7 @@ a span.spanM:hover {
   color:#A1FE2C;
 }
 
-#quienes{
+/*#quienes{
   background-color: white;
   color:blue;
   position: relative;
@@ -313,15 +329,98 @@ a span.spanM:hover {
 .azul{
   height: 40rem;
   background-color: blue;
+}*/
+
+.servicios{
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  margin-bottom: 90px;
 }
+
+.container {
+  position: relative;
+  width: 20rem;
+  height: 30rem;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 13rem;
+}
+.div-img {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -42px;
+}
+.div-img .hidden {
+  overflow: hidden;
+}
+.div-img .img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:7rem;
+  width: 100%;
+  height: 300px;
+  transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img .text {
+
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  z-index: -1;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center;
+  color:#329d17;
+}
+.div-img:hover .img {
+  transform: translate(0px, -170px);
+  -ms-transform: translate(0px, -170px);
+  -moz-transform: translate(0px, -170px);
+  -webkit-transform: translate(0px, -170px);
+  -o-transform: translate(0px, -170px);
+}
+
+.div-img h3{
+  text-align: center;
+  top: 3rem;
+  color:rgba(11, 51, 8, 0.76);
+  font-family: "open sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+#titulo-servicios{
+  position: absolute;
+  top:7rem;
+  left: 46%;
+  font-weight: bold;
+  /*font-size: 4rem;*/
+  color: #10122E;
+  /*text-align: center;*/
+}
+
 
 #galeria{
   margin:10px 20px;
+  margin-bottom: 9rem;
   text-align: center;
 }
 
-h2{
+#title-galeria{
   text-align: center;
+  position: relative;
+  left: 0;
+  top: 6rem;
 }
 
 @import "lesshat";
@@ -343,10 +442,10 @@ h2{
   -ms-transform: translate(@x,@y) scale(@s);
 }
 
-.container{
+.containerG{
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 250px;
   left: 0;
   right: 0;
   margin:10px;
@@ -354,14 +453,15 @@ h2{
   display: inline-block;
 }
 
-.div-img{
+.div-imgG{
     display: block;
     margin-left: auto;
     margin-right: auto;}
 
-.img{
+.imgG{
         display:block;
         position: relative;
+        top:60px;
         z-index: 2;
         margin-left: auto;
         margin-right: auto;
@@ -371,8 +471,11 @@ h2{
         .transform(0px,0px,1);
       -webkit-transition: all 500ms ease-in-out;
     }
-.text{
+
+.textG{
         font-family: 'Open Sans';
+        color:#10122E;
+        font-size: 1.1rem;
         position:relative;
         z-index: 1;
         display:block;
@@ -383,12 +486,12 @@ h2{
         transform: translate(0,0) scale(1);
         -webkit-transition: all 500ms ease-in-out;
     }
-.img:hover{
+.imgG:hover{
             .transform(0px,-30px,0.5);
             transform: translate(0,-30px) scale(0.5);
             border-radius: 50%;
         }
-.text:hover{
+.textG:hover{
             .transform(0px,0px,2);
             transform: translate(0,0) scale(2);
           }
@@ -410,9 +513,13 @@ h2{
   padding: 5px;
   position: absolute;
   top: 4px;
-  right: 165px;
+  right: 361px;
   width: 200px;
   color: white;
+}
+
+.textarea span{
+  right: 156px;
 }
 
 .input-box span:after {
@@ -425,4 +532,46 @@ h2{
   position: absolute;
   right: 100%;
   top: 10px;
+}
+
+footer{
+  position: relative;
+  top: 1rem;
+  height: 6rem;
+  width: 100%;
+  background: rgba(19, 27, 140, 0.87);
+}
+
+.central{
+  width: 20rem;
+  margin-left: 1rem;
+  /*text-align: center;*/
+  padding-top: 1rem;
+}
+
+.central img{
+  width:4rem;
+}
+
+.central p{
+  position: absolute;
+  padding: 1rem;
+  padding-bottom: 0;
+  display: inline-block;
+  color:  #5BB7E7;
+}
+
+.redesF{
+  position: absolute;
+  padding: 1rem;
+  padding-bottom: 0;
+  color:#5BB7E7;
+  font-size: 1rem;
+  top: 1.1rem;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.publicidad{
+  display:block;
 }

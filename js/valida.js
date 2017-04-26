@@ -1,51 +1,55 @@
 var nombre=document.getElementById('name');
 var correo=document.getElementById('mail');
 var asunto=document.getElementById('asunto');
-var mensaje=document.getElementById('msj');
+var mensaje=document.getElementById('parrafo');
 var span=document.getElementsByName('spanValid');
-console.log(span);
 var enviar=document.getElementById('envia');
 
 
 
 function validar(event){
 event.preventDefault();
+console.log(span);
+  for(var i=0; i<span.length;i++){
+    span[i].style.display="block";
+    }
 
-  // for(var i=0; i<span.length;i++){
-  //   span[i].style.display="block";
-  //   }
-
-if(nombre.value==""){
-  span[0].style.display="block";
-  // primMay(nombre);
+if(!(nombre.value=="")){
+  span[0].style.display="none";
+  primMay(nombre);
 }
-// if(correo.value="" || !(/[\w]+@{1}[\w]+\.[a-z]{2,3}/.test(correo))){
-//   span[1].style.display="none";
-// }
-// if(mensaje.value=""){
-//   span[2].style.display="none";
-// }
-// if(nombre.value!="" &&  correo.value!="" && mensaje.value!="" && asunto.value!=""){
-// 		clear();
+if((/[\w]+@{1}[\w]+\.[a-z]{2,3}/.test(correo.value))){
+  span[1].style.display="none";
+
+}
+if(!(mensaje.value=="")){
+  span[2].style.display="none";
 }
 
-// function primMay(item){
-//   var txt="";
-//   var separa=(item.value).split(" ");
-// 	separa.forEach(function(e){
-//     return txt = txt + e.charAt(0).toUpperCase() + e.slice(1) + " ";});
-//   var imp=txt.trim();
-// 	return (item).value=imp;
-// }
-//
-// //función que limpia los casilleros(se puede mejorar función)
-// function clear(){
-//   nombre.value="";
-//   apellido.value="";
-//   correo.value="";
-//   contrasena.value="";
-//   indice.value=0;
-// }
+if(nombre.value!="" && correo.value!="" && mensaje.value!=""){
+  clear();
+} else if (nombre.value!="" && correo.value!="" && mensaje.value!="" && asunto.value!=""){
+  clear();
+}
+
+}
+
+function primMay(item){
+  var txt="";
+  var separa=(item.value).split(" ");
+	separa.forEach(function(e){
+    return txt = txt + e.charAt(0).toUpperCase() + e.slice(1) + " ";});
+  var imp=txt.trim();
+	return (item).value=imp;
+}
+
+
+function clear(){
+  nombre.value="";
+  correo.value="";
+  mensaje.value="";
+  asunto.value="";
+}
 
 function letras(e){
   var key=e.keyCode;
